@@ -87,14 +87,14 @@ import { getFirestore, collection, addDoc, getDocs, deleteDoc, doc, updateDoc, o
 // === FIREBASE CONFIG - KA SA NAKA ANAN IDAN KANA DA SHI ===
 // Idan baka da shi, App zai yi aiki da LocalStorage har yanzu!
 const firebaseConfig = {
-  apiKey: "AIzaSyDUMMY-GWAMMAJA-V6",
+  apiKey: "AIzaSyBn_l-a1lAxBrICJp7_e6a-1CSdRNPktqc",
   authDomain: "gwammaja-v6.firebaseapp.com",
   projectId: "gwammaja-v6",
-  storageBucket: "gwammaja-v6.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456789:web:gwammajav6"
+  storageBucket: "gwammaja-v6.firebasestorage.app",
+  messagingSenderId: "802398869442",
+  appId: "1:802398869442:web:2db4e1e2aee8e8fc3e685b"
 };
-let app, auth, db, useFirebase = true;
+    let app, auth, db, useFirebase = true;
 try{ app = initializeApp(firebaseConfig); auth = getAuth(app); db = getFirestore(app); }catch(e){ useFirebase=false; console.log("Local mode", e); }
 
 let products = JSON.parse(localStorage.getItem("gw_products")||"[]");
